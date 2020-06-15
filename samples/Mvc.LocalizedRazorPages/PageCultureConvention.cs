@@ -66,7 +66,7 @@ namespace LocalizedRazorPages
                     return false;
                 }
 
-                return string.Equals(feature.RequestCulture.Culture.Name, _culture.Name, StringComparison.OrdinalIgnoreCase);
+                return string.Equals(feature.RequestCulture.UICulture.Name, _culture.Name, StringComparison.OrdinalIgnoreCase);
             }
         }
     }
